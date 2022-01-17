@@ -31,7 +31,7 @@ class CannonBall {
   }
 
   shoot() {
-     var newAngle = cannon.angle - 28;
+    var newAngle = cannon.angle - 28;
     newAngle = newAngle *(3.14/180)
     var velocity = p5.Vector.fromAngle(newAngle);
     velocity.mult(0.5);
@@ -44,7 +44,7 @@ class CannonBall {
     var angle = this.body.angle;
     var pos = this.body.position;
     var index = floor(this.speed % this.animation.length);
-    
+
     push();
     translate(pos.x, pos.y);
     rotate(angle);
@@ -62,3 +62,4 @@ class CannonBall {
     }
   }
 }
+
