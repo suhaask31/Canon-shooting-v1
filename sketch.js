@@ -73,8 +73,8 @@ function setup() {
 
 function draw() {
   background(189);
-  // music.play()
-  // music.setVolume(0.0050)
+   music.play()
+   music.setVolume(0.0050)
   image(backgroundImg, 0, 0, width, height);
 
   Engine.update(engine);
@@ -143,8 +143,8 @@ function showCannonBalls(ball, index) {
       if(!ball.isSink){
       ball.remove(index);
       
-      // cannonWater.play()
-      // cannonWater.setVolume(0.01)
+      cannonWater.play()
+      cannonWater.setVolume(0.01)
     }
     }
   }
@@ -195,8 +195,8 @@ function showBoats() {
 function keyReleased() {
   if (keyCode === DOWN_ARROW && !isGameOver) {
     balls[balls.length - 1].shoot();
-    // cannonExplosion.play()
-    // cannonExplosion.setVolume(0.01)
+    cannonExplosion.play()
+    cannonExplosion.setVolume(0.01)
   }
 }
 
